@@ -3,9 +3,11 @@ import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import { Dropdown } from 'primereact/dropdown';
+import {useState} from 'react';
 
 
 export function App() {
+  const [city, setCity] = useState('NY')
 
   const citySelectItems = [
     { label: 'New York', value: 'NY' },
@@ -15,15 +17,14 @@ export function App() {
     { label: 'Paris', value: 'PRS' }
   ];
 
-  const city = 'NY';
 
-  function setCity(value: string) {
-    console.log(value);
-  }
+
+
 
   return (
     <>
-      <Dropdown value={city} options={citySelectItems} onChange={(e) => setCity(e.value)} placeholder="Select a City"/>
+      <Dropdown
+        value={city} options={citySelectItems} onChange={(e) => setCity(e.value)} placeholder="Select a City"/>
     </>
   );
 }
