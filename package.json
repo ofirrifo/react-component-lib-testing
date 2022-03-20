@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "workspaces": [
-    "nx-react"
+    "nx-react",
+    "vite-react"
   ],
   "scripts": {
     "nx-react:start": "npm run start --workspace=nx-react"

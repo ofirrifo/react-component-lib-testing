@@ -6,6 +6,9 @@
 git clone https://github.com/ofirrifo/react-component-lib-testing.git
 ```
 
+## Installation 
+```shell
+```
 
 ## Start NX React Project
 ```shell
