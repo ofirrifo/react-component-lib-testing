@@ -3,7 +3,8 @@ import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import { Dropdown } from 'primereact/dropdown';
-import {useState} from 'react';
+import { useState } from 'react';
+import './app.module.scss'
 
 
 export function App() {
@@ -18,13 +19,18 @@ export function App() {
   ];
 
   return (
-    <>
+    <div className="container">
+      <div>Prime</div>
       <Dropdown
         value={city}
         options={citySelectItems}
         placeholder="Select a City"
-        onChange={(e) => setCity(e.value)} />
-    </>
+        onChange={(e) => setCity(e.value)}/>
+      <div>MUI</div>
+      <div className="placeholder">MUI Dropdown Placeholder</div>
+      <div>IGNITE UI</div>
+      <div className="placeholder">Ignite UI Dropdown Placeholder</div>
+    </div>
   );
 }
 
