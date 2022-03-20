@@ -29,8 +29,8 @@ export function App() {
         onChange={(e) => setCity(e.value)}/>
       <div>MUI</div>
       <div className="placeholder">MUI Dropdown Placeholder</div>
-      <div>IGNITE UI</div>
-      <div className="placeholder">Ignite UI Dropdown Placeholder</div>
+      <div>Ant</div>
+      <div className="placeholder">Ant Dropdown Placeholder</div>
     </div>
   );
 }
