@@ -18,9 +18,6 @@ export function App() {
   ];
 
 
-
-
-
   return (
     <>
       <Dropdown
