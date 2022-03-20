@@ -5,6 +5,7 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import { Dropdown } from 'primereact/dropdown';
 import { useState } from 'react';
+import Button from '@mui/material/Button';
 
 
 
@@ -28,7 +29,9 @@ export function App() {
         placeholder="Select a City"
         onChange={(e) => setCity(e.value)}/>
       <div>MUI</div>
-      <div className="placeholder">MUI Dropdown Placeholder</div>
+      <Button variant="contained" color="primary">
+        Hello World
+      </Button>
       <div>Ant</div>
       <div className="placeholder">Ant Dropdown Placeholder</div>
     </div>
