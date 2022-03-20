@@ -1,12 +1,29 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
+import { Dropdown } from 'primereact/dropdown';
+
 
 export function App() {
+
+  const citySelectItems = [
+    { label: 'New York', value: 'NY' },
+    { label: 'Rome', value: 'RM' },
+    { label: 'London', value: 'LDN' },
+    { label: 'Istanbul', value: 'IST' },
+    { label: 'Paris', value: 'PRS' }
+  ];
+
+  const city = 'NY';
+
+  function setCity(value: string) {
+    console.log(value);
+  }
+
   return (
     <>
-      <NxWelcome title="react-app" />
-      <div />
+      <Dropdown value={city} options={citySelectItems} onChange={(e) => setCity(e.value)} placeholder="Select a City"/>
     </>
   );
 }
