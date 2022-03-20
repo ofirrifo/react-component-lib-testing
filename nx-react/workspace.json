@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "react-app": "apps/react-app",
-    "react-app-e2e": "apps/react-app-e2e"
+    "react-app-e2e": "apps/react-app-e2e",
+    "sing-react-ui": "libs/sing-react-ui"
   }
 }

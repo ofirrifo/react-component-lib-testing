@@ -1,0 +1,23 @@
+{
+  "root": "libs/sing-react-ui",
+  "sourceRoot": "libs/sing-react-ui/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/sing-react-ui/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/sing-react-ui"],
+      "options": {
+        "jestConfig": "libs/sing-react-ui/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
