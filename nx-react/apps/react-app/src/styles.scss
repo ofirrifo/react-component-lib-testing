@@ -4,3 +4,25 @@
 }
 
 
+.p-dropdown{
+  background: #7b3ff2 !important;
+  border-radius: 3px !important;
+
+  .p-dropdown-label{
+    color: white !important;
+  }
+
+  .p-dropdown-trigger{
+    color: white !important;
+  }
+}
+
+.p-highlight{
+  background: #f6f2fe !important;
+  color: #262626 !important;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover {
+  color: #262626 !important;
+  background: #f6f2fe !important;
+}
