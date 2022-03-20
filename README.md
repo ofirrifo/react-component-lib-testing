@@ -22,3 +22,6 @@ npm run vite-react:start
 ```
 
 
+## Candidate Libraries
+- [MUI](https://mui.com/)
+- [prime](https://www.primefaces.org/)
