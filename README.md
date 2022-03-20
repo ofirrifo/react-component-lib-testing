@@ -15,3 +15,10 @@ npm i
 ```shell
 npm run nx-react:start
 ```
+
+## Start NX React Project
+```shell
+npm run vite-react:start
+```
+
+
