@@ -7,7 +7,7 @@ import {useState} from 'react';
 
 
 export function App() {
-  const [city, setCity] = useState('NY')
+  const [city, setCity] = useState('NY');
 
   const citySelectItems = [
     { label: 'New York', value: 'NY' },
@@ -17,11 +17,13 @@ export function App() {
     { label: 'Paris', value: 'PRS' }
   ];
 
-
   return (
     <>
       <Dropdown
-        value={city} options={citySelectItems} onChange={(e) => setCity(e.value)} placeholder="Select a City"/>
+        value={city}
+        options={citySelectItems}
+        placeholder="Select a City"
+        onChange={(e) => setCity(e.value)} />
     </>
   );
 }
