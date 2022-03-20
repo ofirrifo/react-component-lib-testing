@@ -8,7 +8,8 @@
     "vite-react"
   ],
   "scripts": {
-    "nx-react:start": "npm run start --workspace=nx-react"
+    "nx-react:start": "npm run start --workspace=nx-react",
+    "vite-react:start": "npm run dev --workspace=vite-react"
   },
   "repository": {
     "type": "git",
