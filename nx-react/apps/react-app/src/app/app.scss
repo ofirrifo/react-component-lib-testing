@@ -1,0 +1,14 @@
+/* Your styles goes here. */
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 8px;
+  align-items: center;
+}
+
+.placeholder {
+  color: var(--surface-400);
+}
+

@@ -1,10 +1,11 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+import './app.scss'
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import { Dropdown } from 'primereact/dropdown';
 import { useState } from 'react';
-import './app.module.scss'
+
 
 
 export function App() {
